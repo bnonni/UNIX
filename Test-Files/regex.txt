@@ -1,0 +1,50 @@
+ababa
+aaba
+aabab
+aabbaa
+aa
+abc
+a(bc)?
+a(bc
+a
+abcbc
+wind
+window
+end
+good
+will
+a+b+c
++b
+x
+x+1
+x+a
+azbc
+az
+azbcbc
+acc
+acz
+azz
+a0z
+a01
+a0a
+aza
+good! 
+Book.
+hard?
+cool?hot
+nothing
+Grade.A
+book. Z
+E. G
+Level. a
+index?a
+good weather
+very good weather
+cool weather
+very cool bad weather
+cool good weather
+3312
+-2231
++32
+0.5
+2/3

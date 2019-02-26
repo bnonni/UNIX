@@ -1,0 +1,11 @@
+Brasstown Bald, (summit),4784,feet,Union County
+Rabun Bald, (summit),4696,feet,Rabun County
+Dick's Knob, (summit),4620,feet,Rabun County
+ Hightower Bald, (summit),4568,feet,Towns County
+Wolfpen Ridge, (ridge high point),4561,feet,Towns and Union Counties
+ Blood Mountain, (summit),4458,feet,Union County
+Tray Mountain, (summit), 4430,feet,Towns County
+ Grassy Ridge, (ridge high point),4420,feet,Rabun County
+Slaughter Mountain, (summit),4338,feet,Union County
+Double Spring Knob, (summit),4280,feet,Rabun County
+Coosa Bald, (summit),4280,feet,Union County
