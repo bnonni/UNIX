@@ -13,6 +13,6 @@ echo $PATH
 echo $USER
 echo $SHELL
 ps -U husky | awk '{print $1}'
-echo if x>2 y=x*2\; else y=y/2;
+echo "if x>2 y=x*2; else y=y/2;"
 echo Goodbye... $1 
 
