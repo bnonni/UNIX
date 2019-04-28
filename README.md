@@ -1,6 +1,8 @@
 # UNIX = POWER USERS! 
 
-This repo is for all those who are curious about how to better understand the UNIX operating system, how to use the terminal, basic terminal utilities, utilities for power users, practice docs and educational slides. Enjoy! :)
+This repo is a collection of slides from my course at Georgia State (Dr. Yuan Long) CSC 3320 - System-Level Programming. It includes shell scripts, class slides, cheat sheets, and more! Scripts I've written include bourne shell (sh), bourne again shell (bash), awk and sed commands.
+
+The purpose of this repo is to help curious minds learn & understand the UNIX operating system, how to use the terminal, basic terminal utilities and utilities for power users and non-programmers. It includes practice docs and dummy data files to practice. Enjoy! :)
 
 ## [UNIX](Slides/UNIX/)
 
