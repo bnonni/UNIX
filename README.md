@@ -8,11 +8,11 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 
 * [Awk](Shell-Scripting/Awk) - AWK is a special-purpose programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems.
 
-* [Sed](Shell-Scripting/Sed) - SED (stand for **__S__**tream **__ED__**itor) is a Unix utility that parses and transforms text, using a simple, compact programming language. 
+* [Sed](Shell-Scripting/Sed) - SED (stand for **S**tream **ED**itor) is a Unix utility that parses and transforms text, using a simple, compact programming language. 
 
-* [Bash](Shell-Scripting/Bash) - BASH (stand for __**B**__ourne __**A**__gain __**SH**__ell) is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
+* [Bash](Shell-Scripting/Bash) - BASH (stand for **B**ourne **A**gain **SH**ell) is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
 
-* [Sh](Shell-Scripting/Sh) - SH (stand for Bourne __**SH**__ell) The Bourne shell (sh) is a shell, or command-line interpreter, for computer operating systems and was the default shell for Version 7 Unix. Location on your computer in ```/bin/sh```.
+* [Sh](Shell-Scripting/Sh) - SH (stand for Bourne **SH**ell) The Bourne shell (sh) is a shell, or command-line interpreter, for computer operating systems and was the default shell for Version 7 Unix. Location on your computer in ```/bin/sh```.
 
 ## [UNIX](Slides/UNIX/)
 
