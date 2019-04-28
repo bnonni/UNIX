@@ -4,6 +4,18 @@ This repo is a collection of slides from CSC 3320 - System-Level Programming. It
 
 The purpose of this repo is to help curious minds learn & understand the UNIX operating system, how to use the terminal, basic terminal utilities and utilities for power users and non-programmers. It includes practice docs and dummy data files to practice. Enjoy! :)
 
+## [Shell-Scripting](Shell-Scripting/)
+
+* [Awk](Shell-Scripting/Awk) - AWK is a special-purpose programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems.
+
+* [Sed](Shell-Scripting/Sed) - SED (stand for _**S**_tream _**ED**_itor) is a Unix utility that parses and transforms text, using a simple, compact programming language. 
+
+## [UNIX](Slides/UNIX/)
+
+## [UNIX](Slides/UNIX/)
+
+## [UNIX](Slides/UNIX/)
+
 ## [UNIX](Slides/UNIX/)
 
 * [What is UNIX?](Slides/UNIX/What-is-UNIX.pdf) - Overview of UNIX and it's history
