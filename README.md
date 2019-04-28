@@ -4,7 +4,7 @@ This repo is for all those who are curious about how to better understand the UN
 
 ## [UNIX](Slides/UNIX/)
 
-* [What is UNIX?](Slides/UNIX/What-is-UNIX?.pdf) - Overview of UNIX and it's history
+* [What is UNIX?](Slides/UNIX/What-is-UNIX.pdf) - Overview of UNIX and it's history
 
 * [UNIX Root Structure](Slides/UNIX/UNIX-Root-structure.pdf) - Visual representation of the file folder structure of a UNIX-based OS
 
@@ -34,4 +34,5 @@ This repo is for all those who are curious about how to better understand the UN
 
 ## [Practice!?](Practice/)
 
-* [Practice Activities](Practice/) - Random Data Files - Test Using These! :)
+* [Practice Activities](Practice/) - Several Practice Files to test your newly gained shell scripting skills!! :) 
+![](PRACTICE.jpg)
