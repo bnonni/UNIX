@@ -10,7 +10,7 @@ This repo is for all those who are curious about how to better understand the UN
 
 ## [RegEx](Slides/RegEx/)
 
-* [Regular Expression Cheat Sheet](Slides/RegEx/Regular-Expression.pdf) - Cheat sheet for RegEx
+* [Regular Expression Cheat Sheet](Slides/RegEX/Regular-Expression.pdf) - Cheat sheet for RegEx
 
 ## [Basic UNIX Commands](Slides/Basic-UNIX/)
 
