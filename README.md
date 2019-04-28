@@ -10,11 +10,9 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 
 * [Sed](Shell-Scripting/Sed) - SED (stand for _**S**_tream _**ED**_itor) is a Unix utility that parses and transforms text, using a simple, compact programming language. 
 
-## [UNIX](Slides/UNIX/)
+* [Bash](Shell-Scripting/Bash) - BASH (stand for _**B**_ourne _**A**_gain _**SH**_ell) is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
 
-## [UNIX](Slides/UNIX/)
-
-## [UNIX](Slides/UNIX/)
+* [Sh](Shell-Scripting/Sh) - SH (stand for Bourne _**SH**_ell) The Bourne shell (sh) is a shell, or command-line interpreter, for computer operating systems and was the default shell for Version 7 Unix. Location on your computer in ```/bin/sh```.
 
 ## [UNIX](Slides/UNIX/)
 
