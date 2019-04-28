@@ -22,7 +22,7 @@ This repo is for all those who are curious about how to better understand the UN
 
 * [UNIX Utilities for Power-Users](Slides/Basic-UNIX/UNIX-Shell-Scripting.pdf) - UNIX Utility Commands for Power Users
 
-* [Shell Scripting](Slides/Advanced-UNIX/UNIX-Shell-Scripting.pdf) - Advnaced UNIX Commands/BASH Shell Scripts
+* [Shell Scripting](Slides/Advanced-UNIX/UNIX-Shell-Scripting.pdf) - Advanced UNIX Commands/BASH Shell Scripts
 
  ## [Vi-Editor](Slides/Vi-Editor/)
 
