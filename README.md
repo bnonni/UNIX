@@ -1,6 +1,6 @@
 # UNIX = POWER USERS! 
 
-This repo is a collection of information from  myCSC 3320 - System-Level Programming. It includes shell scripts, class slides, cheat sheets, and more! Scripts I've written include bourne shell (sh), bourne again shell (bash), awk and sed commands.
+This repo is a collection of information from my CSC 3320 course - System-Level Programming. It includes shell scripts, class slides, cheat sheets, and more! Scripts I've written include bourne shell (sh), bourne again shell (bash), awk and sed commands.
 
 The purpose of this repo is to help curious minds learn & understand the UNIX operating system, how to use the terminal, basic terminal utilities and utilities for power users and non-programmers. It includes practice docs and dummy data files to practice. Enjoy! :)
 

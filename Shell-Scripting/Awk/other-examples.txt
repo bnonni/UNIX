@@ -1,0 +1,43 @@
+awk 'BEGIN{FS=":"; OFS="-"} {print $1,$6,$7}' /etc/passwd
+awk 'BEGIN{FIELDWIDTHS="3 4 3"}{print $1,$2,$3}' testfile
+awk 'BEGIN{FS="\n"; RS=""} {print $1,$3}' addresses
+awk 'BEGIN{print ARGC,ARGV[1]}' myfile
+awk 'BEGIN{print ENVIRON["PATH"]}'
+echo | awk -v home=$HOME '{print "My home is " home}'
+awk 'BEGIN{FS=":"; OFS=":"} {print $1,$NF}' /etc/passwd
+awk 'BEGIN{FS=","}{print $1,"FNR="FNR}' myfile myfile
+awk 'BEGIN {FS=","}{print $1,"FNR="FNR,"NR="NR}END{print "Total",NR,"processed lines"}' myfile myfile
+awk 'BEGIN{ test="Welcome to My Repo" print test }'
+awk '{if ($1 > 30) print $1}' testfile
+awk '{ if ($1 > 30){ x = $1 * 3 print x }}' testfile
+awk '{ if ($1 > 30){ x = $1 * 3 print x } else{ x = $1 / 2 print x }}' testfile
+
+cat myfile
+awk '{
+sum = 0 
+i = 1
+while (i < 5){ sum += $i i++ }average = sum / 3 print "Average:",average 
+}' testfile
+
+
+___________________________________
+More Variables
+There are some other variables that help you to get more information:
+
+ARGC     Retrieves the number of passed parameters.
+
+ARGV     Retrieves the command line parameters.
+
+ENVIRON     Array of the shell environment variables and corresponding values.
+
+FILENAME    The file name that is processed by awk.
+
+NF     Fields count of the line being processed.
+
+NR    Retrieves total count of processed records.
+
+FNR     The record which is processed.
+
+IGNORECASE     To ignore the character case.
+
+
