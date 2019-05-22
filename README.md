@@ -1,4 +1,5 @@
 # UNIX USERS = POWER USERS! 
+## ![It's a UNIX System - I know this!](its-a-unix-system.jpg)
 
 This repo is a collection of information from my CSC 3320 course - System-Level Programming. It includes shell scripts, class slides, cheat sheets, and more! Scripts I've written include bourne shell (sh), bourne again shell (bash), awk and sed commands.
 
@@ -47,4 +48,3 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 ## [Practice!?](Practice/)
 
 * [Practice Activities](Practice/) - Several Practice Files to test your newly gained shell scripting skills!! :) 
-![](its-a-unix-system.jpg)
