@@ -47,4 +47,4 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 ## [Practice!?](Practice/)
 
 * [Practice Activities](Practice/) - Several Practice Files to test your newly gained shell scripting skills!! :) 
-![](PRACTICE.jpg)
+![](its-a-unix-system.jpg)
