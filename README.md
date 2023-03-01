@@ -1,5 +1,5 @@
 # UNIX for Programmers & Non-Programmers
-## ![](its-a-unix-system.jpg)
+## ![jurassic-park-unix](its-a-unix-system.jpg)
 
 This repo is a collection of information from my CSC 3320 course - System-Level Programming. It includes shell scripts, class slides, cheat sheets, and more! Scripts I've written include bourne shell (sh), bourne again shell (bash), awk and sed commands.
 
