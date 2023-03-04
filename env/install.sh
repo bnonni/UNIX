@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo ln scripts/* ./bin
-cp ~/.profile ~/.profile.bak
+if [ -e ~/.profile ]; then
+  cp ~/.profile ~/.profile.bak
+fi
 cp ./.profile ~/.profile
 source ~/.profile
 echo "Install complete!"
