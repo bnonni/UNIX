@@ -33,7 +33,7 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
  
  ## [Advanced UNIX Commands](Slides/Advanced-UNIX/)
 
-* [UNIX Utilities for Power-Users](Slides/Basic-UNIX/UNIX-Shell-Scripting.pdf) - UNIX Utility Commands for Power Users
+* [UNIX Utilities for Power-Users](Slides/Advanced-UNIX/UNIX-Utilities-for-Power-Users.pdf) - UNIX Utility Commands for Power Users
 
 * [Shell Scripting](Slides/Advanced-UNIX/UNIX-Shell-Scripting.pdf) - Advanced UNIX Commands/BASH Shell Scripts
 
