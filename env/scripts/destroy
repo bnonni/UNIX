@@ -1,0 +1,10 @@
+#!/bin/zsh
+read -p "You are about to destroy $1. Are you sure (Y/n)? "$'\n' a
+if [[ $a -eq "y" ]]
+then
+    rm -rf $1 
+    echo "$1 successfully destroyed!"
+else 
+    echo "Goodbye!"
+    exit 0
+fi

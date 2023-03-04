@@ -1,0 +1,2 @@
+#!/bin/zsh
+wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains website.com --no-parent $1

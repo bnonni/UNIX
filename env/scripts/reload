@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+touch ${LTX_BASEDIR}/touch-reload-front && touch ${LTX_BASEDIR}/touch-reload-admin

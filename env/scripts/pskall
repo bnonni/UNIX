@@ -1,0 +1,6 @@
+#!/bin/zsh
+args=$(ps aux | grep $1 | awk '{print $2}')
+for arg in $args
+do
+ sudo kill -9 $arg
+done

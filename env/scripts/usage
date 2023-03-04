@@ -1,0 +1,3 @@
+#!/bin/zsh
+clear;
+ps aux | awk 'NR<=10'

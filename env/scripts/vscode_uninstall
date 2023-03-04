@@ -1,0 +1,9 @@
+#!/bin/zsh
+extensions=$(code --list-extensions)
+echo $extensions  
+for ext in $extensions
+do
+  code --uninstall-extension $ext
+done
+echo "Done!"
+exit 0

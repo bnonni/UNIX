@@ -1,0 +1,34 @@
+#!/bin/zsh
+read -p "Enter folder name: " f;
+read -p "Enter starting number: " s;
+read -p "Enter ending number: " n;
+inputs=true
+
+while (( inputs ))
+do 
+   if [ $f == ' ' ]
+   then
+     echo "ERR: Folder name cannot be blank."
+     read -p "Enter folder name: " f;
+   elif (( s < 0 ))
+   then
+     echo "ERR: Starting number must be greater than 0."
+     read -p "Enter starting number: " s;
+   elif ((n < s))
+   then
+     echo "ERR: Starting number must be less than ending number."
+     read -p "Enter starting number: " s;
+     read -p "Enter ending number: " n;
+   else
+     echo "Creating files..."
+     inputs=false
+   fi
+done
+while (( s <= n))
+do 
+   file="$f$s.txt"
+   touch $file
+   echo "$file created."
+   (( s++ ))
+done
+echo "Done!"

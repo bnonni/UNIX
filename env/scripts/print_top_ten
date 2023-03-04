@@ -1,0 +1,2 @@
+#!/bin/zsh
+awk 'NR<=10{print $0}'

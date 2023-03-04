@@ -1,0 +1,6 @@
+#!/bin/zsh
+params=$@
+for param in $params
+do
+  kill -9 $param
+done

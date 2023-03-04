@@ -1,0 +1,4 @@
+#!/bin/zsh
+nohup jupyter lab --allow-root > ~/hvar/logs/jupyter/jupyter.log &
+export token=$(cat ~/hvar/logs/jupyter/jupyter_log.txt | egrep "http:\/\/localhost:.{4}\/\?token=.*" | awk -F "=" '{print $2}')
+echo $token

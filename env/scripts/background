@@ -1,0 +1,2 @@
+#!/bin/zsh
+sudo nohup $1 --allow-root > $2.log &

@@ -1,0 +1,4 @@
+#!/bin/zsh
+a-p
+commit-m $1
+push
