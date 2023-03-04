@@ -1,7 +1,7 @@
 export CLICOLOR=1
 # --------------------------- env_exports --------------------------- #
 export PWD=`pwd`
-export SCRIPTS="$PWD/UNIX/env/scripts"
+export SCRIPTS="$PWD/UNIX/env/bin"
 export SHELLRC="$HOME/.profile"
 export PATH="$PATH:$SCRIPTS"
 
