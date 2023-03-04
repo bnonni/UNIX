@@ -2,19 +2,8 @@ export CLICOLOR=1
 # --------------------------- env_exports --------------------------- #
 export PWD=`pwd`
 export SCRIPTS="$PWD/UNIX/env/scripts"
-export HOSTNAME=`hostname`
-export ZSHRC="$HOME/.zshrc"
-export SHELLRC="$HOME/.zshrc"
+export SHELLRC="$HOME/.profile"
 export PATH="$PATH:$SCRIPTS"
-# ---------------------------mac_app_aliases------------------------------- #
-# alias discord='open -a Discord'
-# alias slack='open -a Slack'
-# alias spotify='open -a Spotify'
-# alias terminal='open -a Terminal'
-# alias notes='open -a Notes'
-# alias messages='open -a Messages'
-# alias calendar='open -a Calendar'
-# alias visual='open -a Visual\ Studio'
 
 # ----------------------------------- git_aliases ----------------------------------- #
 alias g="git"
