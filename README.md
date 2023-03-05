@@ -52,10 +52,10 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 ## [Env](env/)
 * Files that I use in my local shell env
 
-## [Shell Profile](profile/.zshrc)
+## [Shell Profile](env/.zshrc)
 * My `.zshrc` shell profile
 
-## [Alias Scripts](profile/scripts/)
+## [Alias Scripts](env/scripts/)
 * Scripts that I have aliased in my shell profile
 
 
