@@ -41,13 +41,13 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 
 * [UNIX Utilities for Power-Users](Slides/Vi-Editor/vi-editor-Quick-Reference.pdf) - Visual Editor (vi) Cheat Sheet
  
-## [Test Files](practice/tests)
+## [Test Files](Practice/tests)
 
-* [Test Data](practice/tests) - Random Data Files - Test Using These! :)
+* [Test Data](Practice/tests) - Random Data Files - Test Using These! :)
 
-## [Practice!?](practice/)
+## [Practice!?](Practice/)
 
-* [Practice Activities](practice/) - Several Practice Files to test your newly gained shell scripting skills!! :) 
+* [Practice Activities](Practice/) - Several Practice Files to test your newly gained shell scripting skills!! :) 
 
 ## [Env](env/)
 * Files that I use in my local shell env
