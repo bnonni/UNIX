@@ -5,7 +5,7 @@ This repo is a collection of information from my CSC 3320 course - System-Level 
 
 The purpose of this repo is to help curious minds learn & understand the UNIX operating system, how to use the terminal, basic terminal utilities and utilities for power users and non-programmers. It includes practice docs and dummy data files to practice. Enjoy! :)
 
-## [Scripting](practice/scripting/)
+## [Scripting](Practice/scripting/)
 
 * [awk](Practice/scripting/awk) - AWK is a special-purpose programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems.
 
