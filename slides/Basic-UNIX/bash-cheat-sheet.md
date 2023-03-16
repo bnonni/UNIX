@@ -1,17 +1,24 @@
-              B A S H   C H E A T   S H E E T    
-   
- to page output forward (only): command filename | more 
- to page output forward & back: command filename | less
- to print a dataset: lp datasetname (-d printerid) (-o landscape)
+# B A S H   C H E A T   S H E E T    
 
- USE OF QUOTATION MARKS
-    echo "$varname"    =   echo The value of \$varname is \"$varname\"
-                       =   echo "The value of \$varname is \"$varname\"."
-    $fred='Four spaces between these    words.'
-          echo $fred      yields    Four spaces between these words.
-          echo "$fred"    yields    Four spaces between these    words.
+```shell
+ command filename | more: to page output forward (only)
+ command filename | less: to page output forward & back
+ lp datasetname (-d printerid) (-o landscape): to print a dataset
+```
 
- SPECIAL CHARACTERS                   
+### USE OF QUOTATION MARKS
+ ```shell
+   varname=i
+   echo "$varname" = i
+   echo The value of \$varname is \"$varname\". # => The value of $varname is "i".
+   echo "The value of \$varname is \"$varname\"." # => The value of $varname is "i".
+
+   echo Four spaces between here    and here. # => Four spaces between here and here.
+   echo "Four spaces between here    and here." # => Four spaces between these    words.
+```
+
+### SPECIAL CHARACTERS      
+ ```shell          
    ~ home directory                 # comment                             
    $ variable expression            & background job                     
    ; shell command separator        / pathname directory separator      
@@ -20,76 +27,96 @@
    ( start subshell                 ) end subshell                      
    [ start character-set wildcard   ] end character-set wildcard        
    { start command block            } end command block                 
-   ' strong quote (prevents subs)   " weak quote (allows subs)           
+   \' strong quote (prevents subs)  \" weak quote (allows subs)           
    < input redirect                 > output redirect                   
    ! logical NOT                    || logical OR                         
   && logical AND                    \ Return  continue on next line
    . (dot builtin: execute)         : (null builtin: returns true)
-  << here document                  >> append output  
-            
- FILE ATTRIBUTE OPERATORS
-    -e    file exists    example: if  [ ! -e filename ]; then
-                                       echo "filename does not exist"
-                                  else ....
-                                  fi
-    -d    file exists and is a directory 
-    -f    file exists and is a normal file  
-    -r    user has read permission for the file  
-    -s    file exists and is not empty
-    -w    user has write permission for the file
-    -x    user has execution permission for a normal file, or
-          user has search permission for a directory
-    -O    user owns the file
-    -G    user's group id has access to the file
-    -nt   newer than   (modification date-time of file
-    -ot   older than    for file-to-file comparison)
-          
- ARITHMETIC ASSIGNMENT
-   let x=1+4          value of $x is 5
-        ='1 + 4'                     5
-        ='(2+3) * 5'                25
-        ='2 + 3 * 5'                17
-        ='17 / 3'                    5
-        ='17 % 3'                    2         
-                                           bitwise:
-        ='1<<4'                     16         00001  ->   10000
-        ='48>>3'                     6        110000  ->  000110
-        ='17 & 3'                    1     10001 & 11 ->   00001  
-        ='17 | 3'                   19     10001 | 11 ->   10011
-        ='17 ^ 3'                   18     10001 ^ 11 ->   10010
+  \<< here document                  \>> append output  
+```
 
- I/O REDIRECTORS
-    cmd1 | cmd2   use stdout of cmd1 as stdin for cmd2
-         > file   save stdout to file
-         < file   use file as stdin
-        >> file   append stdout to file (create file if nonexistent)
-        >| file   force stdout to file (even if noclobber is set)
-       n>| file   force stdout to file from descriptor n (even...)
-        <> file   use file as both stdin and stdout (process in place)
-       n<> file   use as both stdin and stdout for file descriptor n
-        << label  use here-document (within scripts specifies batch input)
-        n> file   direct file descriptor n to file
-        n< file   take file descriptor n from file
-       n>> file   append descriptor n to file (or create file for n)
-       n>&        duplicate stdout to file descriptor n
-       n<&        duplicate stdin from file descriptor n
-       n>&m       make file descriptor n a copy of the stdout fd
-       n<&m       make file descriptor n a copy of the stdin  fd 
-        >&file    send stdout and stderror to file
-       <&-        close stdin
-       >&-        close stdout
-      n<&-        close input  from file descriptor n
-      n>&-        close output from file descriptor n
+### FILE ATTRIBUTE OPERATORS
+```shell
+    -e    file exists
+    example: 
+      if  [ ! -e filename ]; then
+         echo "filename does not exist"
+      else 
+         echo "filename does exist"
+      fi
+```
+```shell
+    -d   # file exists and is a directory 
+    -f   # file exists and is a normal file  
+    -r   # user has read permission for the file  
+    -s   # file exists and is not empty
+    -w   # user has write permission for the file
+    -x   # user has execution permission for a normal file, or user has search permission for a directory
+    -O   # user owns the file
+    -G   # users group id has access to the file
+    -nt  # newer than - modification date-time of file for file-to-file comparison
+    -ot  # older than - modification date-time of file for file-to-file comparison
+```
+### ARITHMETIC ASSIGNMENT
 
- STRING COMPARISON OPERATORS          INTEGER COMPARISON OPERATORS
-  (truth = 0)                          (truth = 1)
-     =    matches                        -lt   less than
-    !=    does not match                 -le   less than or equal 
-     <    less than                      -eq   equal  
-     >    greater than                   -ge   greater than or equal
-    -n    not null (length > 0)          -gt   greater than
-    -z    null (length = 0)              -ne   not equal
- ARITHMETIC OPERATORS                 RELATIONAL OPERATORS
+arithmetic
+```shell
+   # value of $x is 5
+   let x=1+4          
+        '1 + 4'     =  5
+        '(2+3) * 5' = 25
+        '2 + 3 * 5' = 17
+        '17 / 3'    =  5
+        '17 % 3'    =  2         
+```
+
+bitwise
+```shell
+   '1<<4'   = 16 #     00001  ->   10000
+   '48>>3'  =  6 #    110000  ->  000110
+   '17 & 3' =  1 # 10001 & 11 ->   00001  
+   '17 | 3' = 19 # 10001 | 11 ->   10011
+   '17 ^ 3' = 18 # 10001 ^ 11 ->   10010
+```
+
+### I/O REDIRECTORS
+```shell
+cmd1 | cmd2 # use stdout of cmd1 as stdin for cmd2
+> file      # save stdout to file
+< file      # use file as stdin
+>> file     # append stdout to file (create file if nonexistent)
+>| file     # force stdout to file (even if noclobber is set)
+n>| file    # force stdout to file from descriptor n (even...)
+<> file     # use file as both stdin and stdout (process in place)
+n<> file    # use as both stdin and stdout for file descriptor n
+\<< label   # use here-document (within scripts specifies batch input)
+n> file     # direct file descriptor n to file
+n< file     # take file descriptor n from file
+n>> file    # append descriptor n to file (or create file for n)
+n>&         # duplicate stdout to file descriptor n
+n<&         # duplicate stdin from file descriptor n
+n>&m        # make file descriptor n a copy of the stdout fd
+n<&m        # make file descriptor n a copy of the stdin  fd 
+>&file      # send stdout and stderror to file
+<&-         # close stdin
+>&-         # close stdout
+n<&-        # close input  from file descriptor n
+n>&-        # close output from file descriptor n
+```
+ 
+### STRING & INTEGER COMPARISON OPERATORS
+```shell
+   (truth = 0)                        (truth = 1)
+   =    matches                        -lt   less than
+   !=    does not match                 -le   less than or equal 
+   <    less than                      -eq   equal  
+   >    greater than                   -ge   greater than or equal
+   -n    not null (length > 0)          -gt   greater than
+   -z    null (length = 0)              -ne   not equal
+```
+
+### ARITHMETIC OPERATORS                 RELATIONAL OPERATORS
+```shell
     +    addition                        <   less than
     -    subtraction                     >   greater than
     *    multiplication                  <=  less than or equal to
@@ -102,11 +129,15 @@
     ~    bit-wise not
     !    bit-wise not
     ^    bit-wise exclusive or
+```
 
- ARITHMETIC EXPRESSION:   $((   ))
-       echo "Only $(( (365-$(date +%j)) / 7 )) weeks until the New Year"
-          
- KEYWORD VARIABLES
+### ARITHMETIC EXPRESSION:   $((   ))
+```shell
+echo "Only $(( (365-$(date +%j)) / 7 )) weeks until the New Year"
+```
+
+### KEYWORD VARIABLES
+```shell
     BASH_ENV     startup file path  INPUTRC   readline start default
     CDPATH       'cd' searchpath    LANG      locale default
     COLUMNS      width of display   LC_*      locale categories
@@ -115,8 +146,10 @@
     HISTSIZE     max hist entries   MAILCHECK how often, in seconds
     HOME         user default dir   MAILPATH  :-separated list for mail
     IFS          field separators   PATH      :-separated list for cmds
-        and many, many more                               
- SUBSTITUTION OPERATORS
+```
+
+### SUBSTITUTION OPERATORS
+```shell
     ${#varname}           returns the length of varname
     ${varname:-word}      returns word if varname is undefined 
     ${varname:=word}      sets varname to word if varname is undefined
@@ -130,7 +163,9 @@
                           special circumstance: when varname is "@",
                              length means number of positional parameters
                              starting at positional parameter offset
- PATTERN MATCHING
+```
+### PATTERN MATCHING
+```shell
     ${variable#pattern}   if pattern matches beginning of variable's value
                           delete shortest part that matches, return rest
     ${variable##pattern}  if pattern matches beginning of variable's value
@@ -158,8 +193,10 @@
         $Path               /home/me/book/long.file.name
         ${Path%.*}          /home/me/book/long.file
         ${Path%%.*}         /home/me/book/long
-
- CONTROL KEY USAGE ('stty -a' gives complete list)
+```
+ 
+### CONTROL KEY USAGE ('stty -a' gives complete list)
+```shell
     Cntl-C    cancel current comand (first try)
     Cntl-\    cancel current command (second try)
     Cntl-L    clear the screen
@@ -175,10 +212,10 @@
     Cntl-Q    restart output to screen
     Cntl-M    return
     Cntl-Z    suspend current command 
+```           
        
-       
-       
- PROMPT STRINGS                                       
+### PROMPT STRINGS
+```
    PS1  primary prompt string    default "\s-\v\$"  
    PS2  secondary prompt string  default ">"               
    PS3  selection menu p.s.      default "#?"                       
