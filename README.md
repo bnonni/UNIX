@@ -35,7 +35,7 @@ The purpose of this repo is to help curious minds learn & understand the UNIX op
 
 * [UNIX Utilities for Power-Users](slides/Advanced-UNIX/UNIX-Utilities-for-Power-Users.pdf) - UNIX Utility Commands for Power Users
 
-* [Shell Scripting](slides/Advanced-UNIX/UNIX-practice/scripting.pdf) - Advanced UNIX Commands/BASH Shell Scripts
+* [Shell Scripting](slides/Advanced-UNIX/UNIX-Shell-Scripting.pdf) - UNIX Shell Programming Language
 
  ## [Vi-Editor](slides/Vi-Editor/)
 
